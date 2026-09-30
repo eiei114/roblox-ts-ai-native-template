@@ -1,0 +1,17 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"useTabs": true,
+	"tabWidth": 4,
+	"printWidth": 100,
+	"endOfLine": "lf",
+	"sortImports": false,
+	"ignorePatterns": [
+		"node_modules/**",
+		"out/**",
+		"include/**",
+		"build/**",
+		"*.rbxl",
+		"*.rbxlx",
+		"package-lock.json"
+	]
+}

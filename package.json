@@ -1,0 +1,42 @@
+{
+	"name": "roblox-ts-ai-native-template",
+	"version": "0.1.0",
+	"private": true,
+	"description": "AI-native roblox-ts multi-place template with fast Oxc checks",
+	"scripts": {
+		"build": "rbxtsc --rojo compiler.project.json",
+		"watch": "rbxtsc --rojo compiler.project.json -w",
+		"typecheck": "tsc --noEmit --skipLibCheck true --tsBuildInfoFile out/typecheck.tsbuildinfo",
+		"lint": "oxlint src --deny-warnings",
+		"lint:fix": "oxlint src --fix --deny-warnings",
+		"lint:json": "oxlint src --format json --deny-warnings",
+		"lint:roblox": "oxlint src --config .oxlint-roblox.json --deny-warnings",
+		"lint:typed": "eslint src --max-warnings 0",
+		"format": "oxfmt --write .",
+		"format:check": "oxfmt --check .",
+		"check": "npm run format:check && npm run lint && npm run build",
+		"check:full": "npm run check && npm run typecheck && npm run lint:roblox && npm run lint:typed && npm run test:tooling",
+		"test:tooling": "node --test tests/tooling.test.cjs",
+		"serve:lobby": "rojo serve places/lobby.project.json --port 34872",
+		"serve:game": "rojo serve places/game.project.json --port 34873",
+		"place": "npm run build && node scripts/build-places.cjs && node scripts/verify-places.cjs",
+		"benchmark:tooling": "node scripts/benchmark-tooling.cjs"
+	},
+	"dependencies": {
+		"@rbxts/services": "1.6.0"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "3.0.0-types.0",
+		"@rbxts/types": "1.0.955",
+		"@typescript-eslint/parser": "8.71.0",
+		"eslint": "10.11.0",
+		"eslint-plugin-roblox-ts": "1.4.1",
+		"oxfmt": "0.71.0",
+		"oxlint": "1.86.0",
+		"roblox-ts": "3.0.0",
+		"typescript": "5.5.3"
+	},
+	"engines": {
+		"node": ">=22.13.0"
+	}
+}

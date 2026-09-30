@@ -1,0 +1,26 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"extends": ["./.oxlintrc.json"],
+	"plugins": ["typescript"],
+	"jsPlugins": ["eslint-plugin-roblox-ts"],
+	"categories": { "correctness": "error" },
+	"rules": {
+		"roblox-ts/no-any": "error",
+		"roblox-ts/no-enum-merging": "error",
+		"roblox-ts/no-export-assignment-let": "error",
+		"roblox-ts/no-for-in": "error",
+		"roblox-ts/no-function-expression-name": "error",
+		"roblox-ts/no-get-set": "error",
+		"roblox-ts/no-implicit-self": "error",
+		"roblox-ts/no-invalid-identifier": "error",
+		"roblox-ts/no-namespace-merging": "error",
+		"roblox-ts/no-null": "error",
+		"roblox-ts/no-private-identifier": "error",
+		"roblox-ts/no-unsupported-syntax": "error",
+		"roblox-ts/no-user-defined-lua-tuple": "error",
+		"roblox-ts/no-value-typeof": "error",
+		"roblox-ts/prefer-get-players": "error",
+		"roblox-ts/prefer-task-library": "error"
+	},
+	"ignorePatterns": ["node_modules/**", "out/**", "include/**"]
+}

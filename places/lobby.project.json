@@ -1,0 +1,53 @@
+{
+	"name": "ai-native-lobby",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$className": "Folder",
+				"common": { "$path": "../out/server/common" },
+				"lobby": { "$path": "../out/server/lobby" }
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "../include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": { "$path": "../node_modules/@rbxts" }
+				}
+			},
+			"TS": { "$path": "../out/shared" }
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$className": "Folder",
+					"common": { "$path": "../out/client/common" },
+					"lobby": { "$path": "../out/client/lobby" }
+				}
+			}
+		},
+		"Workspace": {
+			"$className": "Workspace",
+			"Baseplate": {
+				"$className": "Part",
+				"$properties": { "Anchored": true, "Size": [100, 1, 100], "Position": [0, 0, 0] }
+			},
+			"Spawn": {
+				"$className": "SpawnLocation",
+				"$properties": {
+					"Anchored": true,
+					"Size": [6, 1, 6],
+					"Position": [0, 2, 0],
+					"Neutral": true
+				}
+			}
+		}
+	}
+}

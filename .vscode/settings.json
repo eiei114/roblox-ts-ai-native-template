@@ -1,0 +1,6 @@
+{
+	"editor.formatOnSave": true,
+	"[typescript]": { "editor.defaultFormatter": "oxc.oxc-vscode" },
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"files.exclude": { "out": true, "include": true }
+}

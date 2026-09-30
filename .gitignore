@@ -1,0 +1,12 @@
+node_modules/
+out/
+include/
+build/
+*.rbxl
+*.rbxlx
+sourcemap.json
+*.tsbuildinfo
+.tooling-probe-*
+.env
+.env.*
+!.env.example
