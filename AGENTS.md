@@ -1,6 +1,6 @@
 # AI-native multi-place development contract
 
-- This is a standalone private multi-place roblox-ts template, not the ReVIEW book toolchain.
+- This is a standalone multi-place roblox-ts template, not the ReVIEW book toolchain.
 - Work on TypeScript in `src/server`, `src/client`, and `src/shared`. Never edit generated `out/` or `include/`.
 - Runtime code targets Roblox/Luau, not Node or browsers. Do not use DOM, Node APIs, arbitrary npm runtime packages, `null`, or `any`.
 - Keep server authority on the server. Never trust client input for rewards, purchases, or persistence.

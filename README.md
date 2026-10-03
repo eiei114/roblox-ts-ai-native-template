@@ -69,3 +69,7 @@ roblox-ts 3.0.0が依存するTypeScript 5.5.3を合わせて固定していま�
 まだAIのワンショット生成速度やトークン量を計測した結果はありません。lintやformatterの速さと、AIのコード生成速度は別の指標です。
 
 検証条件と一次資料は [docs/tooling-verification.md](docs/tooling-verification.md)、ワンショット比較の手順は [docs/one-shot-protocol.md](docs/one-shot-protocol.md) を参照してください。
+
+## ライセンス
+
+MIT License（[LICENSE](LICENSE)）。テンプレートの名前は仮で、後で変更する可能性があります。

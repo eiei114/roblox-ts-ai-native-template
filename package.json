@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"description": "AI-native roblox-ts multi-place template with fast Oxc checks",
+	"license": "MIT",
 	"scripts": {
 		"build": "rbxtsc --rojo compiler.project.json",
 		"watch": "rbxtsc --rojo compiler.project.json -w",
